@@ -15,6 +15,7 @@ def create_list(size):
     }
     """
 
+
 def is_empty(listADT):
     """
     Checks if the deque is empty.
@@ -26,6 +27,7 @@ def is_empty(listADT):
     True if the deque is empty, False otherwise.
     """
 
+
 def is_full(listADT):
     """
     Checks if the deque is full.
@@ -36,6 +38,7 @@ def is_full(listADT):
     Returns:
     True if the deque is full, False otherwise.
     """
+
 
 def get(i, listADT):
     """
@@ -49,6 +52,7 @@ def get(i, listADT):
     The element at the specified index.
     """
 
+
 def set(i, e, listADT):
     """
     Sets the element at the specified index in the deque.
@@ -58,6 +62,7 @@ def set(i, e, listADT):
     - e: The element to be set.
     - listADT: The deque data structure.
     """
+
 
 def length(listADT):
     """
@@ -70,6 +75,7 @@ def length(listADT):
     The number of elements in the deque.
     """
 
+
 def add(i, e, listADT):
     """
     Adds an element at the specified index in the deque.
@@ -80,6 +86,7 @@ def add(i, e, listADT):
     - listADT: The deque data structure.
     """
 
+
 def remove(i, listADT):
     """
     Removes the element at the specified index in the deque.
@@ -88,6 +95,7 @@ def remove(i, listADT):
     - i: The index of the element to remove.
     - listADT: The deque data structure.
     """
+
 
 def insert_last(e, listADT):
     """
@@ -98,6 +106,7 @@ def insert_last(e, listADT):
     - listADT: The deque data structure.
     """
 
+
 def remove_last(listADT):
     """
     Removes the last element from the deque.
@@ -105,6 +114,7 @@ def remove_last(listADT):
     Parameters:
     - listADT: The deque data structure.
     """
+
 
 def insert_first(e, listADT):
     """
@@ -115,6 +125,7 @@ def insert_first(e, listADT):
     - listADT: The deque data structure.
     """
 
+
 def remove_first(listADT):
     """
     Removes the first element from the deque.
@@ -122,6 +133,7 @@ def remove_first(listADT):
     Parameters:
     - listADT: The deque data structure.
     """
+
 
 def get_first(listADT):
     """
@@ -133,6 +145,7 @@ def get_first(listADT):
     Returns:
     The first element in the deque.
     """
+
 
 def get_last(listADT):
     """

@@ -15,7 +15,9 @@ def init_matrix(rows: int, cols: int) -> list[list[int]]:
     return [[0 for _ in range(cols)] for _ in range(rows)]
 
 
-def detect_edges(image: list[list[int]], filter: list[list[int]], stride: int) -> list[list[int]]:
+def detect_edges(
+    image: list[list[int]], filter: list[list[int]], stride: int
+) -> list[list[int]]:
     """
     Detects edges in the input image by convolving the image with the filter.
 
@@ -33,15 +35,15 @@ def detect_edges(image: list[list[int]], filter: list[list[int]], stride: int) -
 # (OPTIONAL) This function visualizes the input and output (processed) images side by side using matplotlib.
 # def visualize_images_together(image1, image2):
 #     fig, axes = plt.subplots(1, 2, figsize=(10, 5))
-    
+
 #     axes[0].imshow(image1, cmap='gray')
 #     axes[0].set_title('Original Image')
 #     axes[0].axis('off')
-    
+
 #     axes[1].imshow(image2, cmap='gray')
 #     axes[1].set_title('Processed Image')
 #     axes[1].axis('off')
-    
+
 #     plt.show()
 
 
@@ -57,7 +59,7 @@ def main(file_name: str) -> list[list[int]]:
     Calls detect_edges(...) to perform convolution of image with vertical and horizontal filters.
     Sums the two processed images to obtain the final processed image.
     (Optional) Visualizes the original and processed images side by side using matplotlib.
-    
+
     Parameter(s):
     - file_name (string): Path to input text file.
 
@@ -69,4 +71,4 @@ def main(file_name: str) -> list[list[int]]:
 
 # Initiates the program by calling main function.
 if __name__ == "__main__":
-    main('./inputs/test1.txt')
+    main("./inputs/test1.txt")

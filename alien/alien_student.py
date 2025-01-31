@@ -1,5 +1,7 @@
 from typing import Any
+
 import list_adt_student as listadt
+
 
 def create_alien() -> dict[str, Any]:
     """
@@ -12,10 +14,11 @@ def create_alien() -> dict[str, Any]:
         'messages': listadt.create_list(100)    # List to store messages with a maximum capacity of 100
     }
     """
-    messages = {"messages":listadt.create_list(100)}
+    messages = {"messages": listadt.create_list(100)}
 
     # provide other required implementation here
     pass
+
 
 def add(seq: int, msg: str, length: int, alienList: dict):
     """
@@ -29,6 +32,7 @@ def add(seq: int, msg: str, length: int, alienList: dict):
     # provide implementation here
     pass
 
+
 def delete(seq: int, msg: str, length: int, alienList: dict):
     """
 
@@ -41,6 +45,7 @@ def delete(seq: int, msg: str, length: int, alienList: dict):
 
     # provide implementation here
     pass
+
 
 def get_messages(alienList: dict) -> list[str]:
     """
@@ -67,7 +72,7 @@ def main(filename) -> list[str]:
     - If the sequence number is positive, add the message to the conversation.
     - If the sequence number is 0, delete the message from the conversation.
     - If the sequence number is negative, stop processing the file.
-    
+
     Parameters:
     - filename: The name of the file to read data from.
 
@@ -79,5 +84,4 @@ def main(filename) -> list[str]:
     # Provide your implementation here
 
     output = get_messages(messages)
-    return(output)
-
+    return output
