@@ -1,6 +1,6 @@
 import pytest
 
-from sorting import main
+from sorting_student import main
 
 
 sorting_testcases = [
